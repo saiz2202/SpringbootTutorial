@@ -1,0 +1,20 @@
+Springboot projects
+1. Create maven project - done
+2. Add module for sprinboot - done
+3. Create Student and department class - done
+4. Use Spring jpa and native queries and Paging and Sorting
+5. User rest services
+6. Use one to one and one to many
+7. Spring profiles
+8. Unit testing(junit and mockito)
+9. Lombok
+10.validation
+11.event, listener
+12.Spring security
+13.Oauth
+14.JWT
+15.Docker
+16.Kubernetes
+17.GIT - partial
+18.Messaging queues
+19. Exceptional handlers
