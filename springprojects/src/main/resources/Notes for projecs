@@ -7,8 +7,8 @@ Springboot projects
 6. Use one to one and one to many
 7. Spring profiles
 8. Unit testing(junit and mockito)
-9. Lombok
-10.validation
+9. Lombok - done
+10.validation -done
 11.event, listener
 12.Spring security
 13.Oauth
@@ -17,4 +17,4 @@ Springboot projects
 16.Kubernetes
 17.GIT - partial
 18.Messaging queues
-19. Exceptional handlers
+19. Exceptional handlers - Done

@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RestController
+@RequestMapping("/api")
 public class StudentController {
 
     private StudentService studentService;
@@ -22,7 +23,7 @@ public class StudentController {
         this.studentService=studentService;
     }
 
-    @RequestMapping("/student")
+    @PostMapping ("/student")
     public ResponseEntity<StudentResponse> saveStudent(@RequestBody Student student) {
         Address address = student.getAddress();
         Student studentSaved = studentService.saveStudent(student);
