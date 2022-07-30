@@ -33,11 +33,11 @@ public class Student {
     @Max(value = 100)
     private int age;
 
-    @ManyToOne
+    @ManyToOne(cascade = {CascadeType.MERGE,CascadeType.ALL})
     @JoinColumn(name = "address_ID")
     private Address address;
 
-    @ManyToOne
+    @ManyToOne(cascade = {CascadeType.MERGE,CascadeType.ALL})
     @JoinColumn(name = "department_ID")
     private Department department;
 

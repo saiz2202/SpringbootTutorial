@@ -5,6 +5,8 @@ import com.example.spring.springprojects.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.Optional;
+
 @Component
 public class StudentService {
 
@@ -17,5 +19,9 @@ public class StudentService {
 
     public Student saveStudent(Student student) {
       return  studentRepository.save(student);
+    }
+
+    public Optional<Student> getStudentsBasedOnId(Long id) {
+       return  studentRepository.findById(id);
     }
 }

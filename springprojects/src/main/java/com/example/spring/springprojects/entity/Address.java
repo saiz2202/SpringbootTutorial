@@ -26,13 +26,10 @@ public class Address {
     @GeneratedValue(strategy = GenerationType.SEQUENCE,generator = "addressId")
     @Column( name="address_id" )
     private Long id;
-
     @Size(max = 50)
     private String doorNo;
-
     @Size(max = 200)
     private String street;
-
     private int pincode;
 
 

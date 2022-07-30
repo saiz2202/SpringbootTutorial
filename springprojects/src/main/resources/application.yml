@@ -7,10 +7,12 @@ spring:
     password: tad
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: create
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+        globally_quoted_identifiers=true:
+
 
 server:
   port: 7777

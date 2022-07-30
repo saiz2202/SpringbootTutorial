@@ -8,5 +8,5 @@ import org.springframework.stereotype.Repository;
 import javax.persistence.Id;
 
 @Repository
-public interface StudentRepository extends JpaRepository<Student, Id> {
+public interface StudentRepository extends JpaRepository<Student, Long> {
 }
