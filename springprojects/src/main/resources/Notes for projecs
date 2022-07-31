@@ -6,7 +6,7 @@ Springboot projects
 5. User rest services
 6. Use one to one and one to many
 7. Spring profiles
-8. Unit testing(junit and mockito)
+8. Unit testing(junit and moccckito)
 9. Lombok - done
 10.validation -done
 11.event, listener

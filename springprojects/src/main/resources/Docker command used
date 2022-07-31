@@ -1,0 +1,38 @@
+97 docker run -d -p 5432:5432 --name postgres  --network springboot -e POSTGRES_PASSWORD=tad  postgres::latest
+  98 docker run -d -p 5432:5432 --name postgres  --network springboot -e POSTGRES_PASSWORD=tad  postgres::latest
+  99 docker run -d -p 5432:5432 --name postgres  --network springboot -e POSTGRES_PASSWORD=tad  postgres::latest
+ 100 clear
+ 101 docker run -d  --name postgres -p 5432:5432 --network springboot -e POSTGRES_PASSWORD=tad  postgres:10.0
+ 102 docker run -p 8082:7777 --name springboottutorial --network springboot springboot:1.0.1
+ 103 docker rm fff8
+ 104 docker rm ff8
+ 105 docker run -p 8082:7777 --name springboottutorial --network springboot springboot:1.0.1
+ 106 clear
+ 107 docker-compose up
+ 108 cd .\src\main\docker\
+ 109 docker-compose up
+ 110 docker container
+ 111 docker container ls
+ 112 docker exec -it d480
+ 113 docker exec -it d48025f04b3c
+ 114 docker exec -it postgres
+ 115 docker-compose up
+ 116 docker container ls -a
+ 117 docker exec -t db
+ 118 docker exec -it db
+ 119 docker container ls
+ 120 docker -rm d480
+ 121 docker -rm container d480
+ 122 docker container rm d480
+ 123 docker container -rm d480
+ 124 docker container stop d480
+ 125 docker container -rm d480
+ 126 docker container rm d480
+ 127 dockert container ls
+ 128 docker container ls
+ 129 docker container ls -a
+ 130 docker container start 291
+ 131 docker exec -it db
+ 132 docker exec -it db /bin/sh
+ 133 clear
+ 134 docker-compose up

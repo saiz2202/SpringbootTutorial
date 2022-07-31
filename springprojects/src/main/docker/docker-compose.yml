@@ -1,0 +1,28 @@
+version: '2'
+
+services:
+  app:
+    image: 'springboot:1.0.1'
+    build:
+      context: .
+    container_name: app
+    expose:
+      - "7777"
+    ports:
+      - "7777:7777"
+    depends_on:
+      - db
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/spring
+      - SPRING_DATASOURCE_USERNAME=compose-postgres
+      - SPRING_DATASOURCE_PASSWORD=compose-postgres
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+
+
+  db:
+    image: 'postgres:10.0'
+    container_name: db
+    environment:
+      - POSTGRES_USER=compose-postgres
+      - POSTGRES_PASSWORD=compose-postgres
+      - POSTGRES_DB=spring
